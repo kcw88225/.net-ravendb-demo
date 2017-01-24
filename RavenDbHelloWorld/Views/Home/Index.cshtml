@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RavenDB & .NET Hello World</title>
+</head>
+<body>
+    <button id="create-btn">Create</button>
+    <button id="del-all-btn">Delete All</button>
+    <section id="display"></section>
+
+    <script src="@Url.Content("~/scripts/jquery-3.1.1.min.js")"></script>
+    <script src="@Url.Content("~/scripts/helper.js")"></script>
+    <script type="text/javascript">
+        helper.render();
+        helper.bindCreateBtnOnClickEvent();
+        helper.bindDeleteAllBtnOnClickEvent();
+    </script>
+</body>
+</html>
